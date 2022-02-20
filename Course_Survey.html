@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Course Survey</title>
+    <style>
+      body, input { 
+      padding:0 230px 0 230px;
+      margin: 20px;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+      }
+      body{background-color: lightgrey}
+      h1 {
+      font-weight: 400;
+      text-align: center;
+      }
+      h4,h2 {
+      margin: 18px;
+      }
+      .main-block {
+      display: flex;
+      justify-content: center;
+      
+      padding: 8px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 2px 5px #ccc; 
+      background: white;
+      }
+      input {
+      width: 250px;
+      padding: 5px;
+      margin-top: 1px;
+      margin-bottom: 2px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      }
+      textarea {
+      width: 250px;
+      }
+      
+      .question, .comments {
+      margin: 15px 0 5px 18px;
+      }
+      .question-answer label {
+      display: inline-block;
+      padding: 0 20px 15px 0;
+      }
+      .question-answer input {
+      width: auto;
+      }
+      .question-answer{
+      width: 100%;
+      }
+   
+      button {
+      width: 150px;
+      padding: 10px;
+      margin-left: 18px;
+      border: none;
+      border-radius: 5px; 
+      background: #095484;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+      <form action="/">
+        <h1>Course Survey</h1><hr>
+        <h4>First Name</h4>
+        <input type="text"/>
+        <h4>Last Name</h4>
+        <input type="text"/>
+        <h4>Email</h4>
+        <input type="email"/>
+        <h2>Feedback</h2>
+        <p class="question">This was a worthwhile class</p>
+        <div class="question-answer">
+          <label><input type="radio"/> yes</label>
+          <label><input type="radio"/> no</label>
+        </div>
+        <p class="question">Would you recommend this course to a fellow
+          student?
+        </p>
+        <div class="question-answer">
+          <label><input type="radio"/> yes</label>
+          <label><input type="radio"/> no</label>
+        </div>
+        <p class="question">Overall Course Experience</p>
+        <select class="question">
+        	<option>Poor</option>
+        	<option>Fair</option>
+        	<option>Good</option>
+        	<option>Very Good</option>
+        	<option>Excellent</option>
+        </select>
+        <p class="question">Did the instructor actively attempt to prevent cheating in this course?</p>
+        <p class="comments">Answer</p>
+        <textarea class="question"rows="5"></textarea>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
